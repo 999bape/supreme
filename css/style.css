@@ -1,0 +1,218 @@
+* { margin: 0; padding: 0; list-style: none; }
+      a { text-decoration: none; color: inherit;}
+      body { height: 10000px;}
+      #intro { width: 100%; height: 100%; overflow: hidden; background-color: #000; position: relative; position: fixed; }
+      #intro>video {  position: absolute; width: 1920px; height: 1080px; left: 50%; top: 50%; margin-left: -980px; margin-top: -540px; transform: scale(0.2); z-index: 9999;}
+      #intro_text1 {width: 1920px; color: #fff; font-size: 50px; position: absolute; left: 0px; top: 0px; opacity: 0.3;-webkit-text-stroke:1px #fff; color:transparent;}
+      #intro_text1>li {float: left; margin-left: 10px; }
+      #intro_text2 {width: 1920px; color: #fff; font-size: 50px; position: absolute; right: 0px; top: 0px;  font-weight: 900;-webkit-text-stroke:1px #fff; color:transparent; }
+      #intro_text2>li {float: left; margin-left: 10px; }
+      #intro_text3 {width: 1920px; color: #fff; font-size: 50px; position: absolute; left: 0px; bottom: 0; opacity: 0.3;-webkit-text-stroke:1px #fff; color:transparent;}
+      #intro_text3>li {float: left; margin-left: 10px; }
+      #intro_text4 {width: 1920px; color: #fff; font-size: 50px; position: absolute; right: 0px; bottom: 0;  font-weight: 900; -webkit-text-stroke:1px #fff; color:transparent;}
+      #intro_text4>li {float: left; margin-left: 10px; }
+      
+      #scroll>h6 { color: #fff; width: 100%; position: fixed; bottom: 150px; text-align: center; font-size: 16px;}
+      #scroll>h5 { color: #fff; width: 100%; position: fixed; bottom: 120px; text-align: center; font-size: 20px;}
+      #scroll { position: fixed; left: 0; top: 0; font-size: 100px; color: #fff;}
+      #scroll0 { position: fixed; left: 0; top: 0; font-size: 100px; color: #fff; z-index: 99999999;}
+      #wrap { width: 100%; }
+      #main {width: 100%; height: 10000px; background: url(../images/bg.jpeg); position: absolute; top: 3000px; left: 0; font-family: 'Shadows Into Light', cursive;  }
+      header { width: 100%; height: 110px; margin: auto;  position: relative; left: 0;top: 0; z-index: 99999999999;} /* 고정  */
+      .logo { width: 300px; height: 100px; margin-top: 2px;  float: left;}
+      .logo>img { width: 100%; vertical-align: middle;}
+      .menu_icon { width: 100px; height: 100px; float: right;}
+
+      #menu_slide { display: none; position: absolute; width: 400px; height: 500px; background-color: #fff; right: 0; top: 110px; text-align: center; z-index: 99999; }
+      #menu_slide>li { width: 400px; height: 100px; line-height: 50px; font-size: 50px; }
+
+
+      #main_scroll { width: 100%; height: 500px; position: relative;}
+      #main_scroll>video {position: absolute; width: 1920px; height: 1080px; left: 50%; top: 50%; margin-left: -980px; margin-top: -540px; transform: scale(0.2);}
+      #main_scroll2 { width: 1000px; height: 200px; margin-left: 100px; }
+      #main_scroll2>li:nth-child(1) {width: 200px; height: 200px; background: url(../images/main2.jpeg) center no-repeat; background-size: cover;  float: left; }
+      #main_scroll2>li:nth-child(2) { width: 500px; height: 200px; margin-top: 30px; color: #fff; float: left; text-align: center;font-size: 20px; opacity: 0;} 
+
+      #main_scroll3 {width: 1000px; height: 200px; float: right; margin-top: 300px; }
+      #main_scroll3>li:nth-child(1) {width: 700px; height: 200px;  float: left; color: #fff; float: left; text-align: center;font-size: 20px; margin-top: 50px; margin-right: 30px;}
+      #main_scroll3>li:nth-child(2) { width: 200px; height: 200px;  float: left; background: url(../images/main3.jpg) center no-repeat; background-size: cover;} 
+
+      #main_scroll4 { width: 1000px; height: 200px; margin-left: 100px; margin-top: 800px;}
+      #main_scroll4>li:nth-child(1) {width: 200px; height: 200px; background: url(../images/main4.jpg) center no-repeat; background-size: cover; float: left;  }
+      #main_scroll4>li:nth-child(2) { width: 700px; height: 200px;  color: #fff; float: left; text-align: center;font-size: 20px; margin-left: 20px; margin-top: 50px;} 
+
+      #main_scroll5 {width: 1000px; height: 200px; float: right; margin-top: 300px; }
+      #main_scroll5>li:nth-child(1) {width: 700px; height: 200px;  float: left; color: #fff; float: left; text-align: center;font-size: 20px; margin-top: 50px; margin-right: 30px;}
+      #main_scroll5>li:nth-child(2) { width: 200px; height: 200px;  float: left; background: url(../images/main5.jpg) center no-repeat; background-size: cover;} 
+
+      #main_scroll6 { width: 1000px; height: 200px; margin-left: 100px; margin-top: 800px;}
+      #main_scroll6>li:nth-child(1) {width: 200px; height: 200px; background: url(../images/main6.jpeg) center no-repeat; background-size: cover; float: left;  }
+      #main_scroll6>li:nth-child(2) { width: 700px; height: 200px;  color: #fff; float: left; text-align: center;font-size: 20px; margin-left: 20px; margin-top: 50px;} 
+
+      #main_scroll7 {width: 1000px; height: 200px; float: right; margin-top: 300px; }
+      #main_scroll7>li:nth-child(1) {width: 700px; height: 200px;  float: left; color: #fff; float: left; text-align: center;font-size: 20px; margin-top: 50px; }
+      #main_scroll7>li:nth-child(2) { width: 200px; height: 200px;  float: left; background: url(../images/main7.jpg) center no-repeat; background-size: cover;} 
+
+      #fw22 { width: 100%; height: 1000px; background: url(../images/main1.jpg)0 no-repeat; position: absolute; top: 7100px; left: 0; overflow: hidden; position: relative;}
+      
+      #item { width: 1000px; margin: auto; margin-top: 150px;  }
+      #item>li { width: 160px; height: 160px; float: left; overflow: hidden; background-color: #000; }
+      #item>li:hover>img { opacity: 1;}
+      #item>li>img { width: 100%; transform: scale(3); opacity: 0.5;}
+      #item>li:nth-child(1)>img {transform: scale(3) translate(0px, -30px);}
+      #item>li:nth-child(2)>img {transform: scale(2) translate(0px, 20px);}
+      #item>li:nth-child(3)>img {transform: scale(4) translate(20px, 30px);}
+
+      #megaphone { width: 200px; height: 200px; position: absolute; left: 200px; top: 120px; }
+      #megaphone>img { width: 100%; }
+      #skate { width: 300px; height: 100px; position: absolute; left: 500px; top: 80px; }
+      #skate>img { width: 100%;}
+
+
+      .item_text { width: 800px; height: 100px; position: absolute; left: 0; right: 0; bottom: 100px; margin: auto; font-size: 20px;}
+      .close { width: 50px; height: 50px; background-color: #000; color: #fff; position: absolute; right: 500px; bottom: 150px;  }
+      .popup1 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff; text-align: center;}
+      .popup1>.item_img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup1>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+      
+     
+      .popup2 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff; text-align: center;}
+      .popup2>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup2>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+      
+      .popup3 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff; text-align: center;}
+      .popup3>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup3>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+      
+      .popup4 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff; text-align: center;}
+      .popup4>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup4>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+
+      .popup5 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff; text-align: center;}
+      .popup5>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup5>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+
+      .popup6 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff; text-align: center;}
+      .popup6>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup6>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+
+      .popup7 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff; text-align: center;}
+      .popup7>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup7>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+
+      .popup8 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff; text-align: center; }
+      .popup8>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup8>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+
+      .popup9 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff; text-align: center;}
+      .popup9>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup9>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+
+      .popup10 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff; text-align: center;}
+      .popup10>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup10>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+
+      .popup11 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff;text-align: center; }
+      .popup11>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup11>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+
+      .popup12 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff;text-align: center; }
+      .popup12>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup12>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+
+      .popup13 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff;text-align: center; }
+      .popup13>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup13>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+
+      .popup14 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff;text-align: center; }
+      .popup14>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup14>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+
+      .popup15 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff;text-align: center; }
+      .popup15>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup15>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+
+      .popup16 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff;text-align: center; }
+      .popup16>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup16>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+
+      .popup17 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff; text-align: center;}
+      .popup17>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup17>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+
+      .popup18 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff; text-align: center;}
+      .popup18>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup18>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+
+      .popup19 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff; text-align: center;}
+      .popup19>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup19>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+
+      .popup20 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff; text-align: center;}
+      .popup20>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup20>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+
+      .popup21 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff;text-align: center; }
+      .popup21>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup21>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+
+      .popup22 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff; text-align: center;}
+      .popup22>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup22>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+
+      .popup23 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff;text-align: center; }
+      .popup23>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup23>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+
+      .popup24 { display: none; position: absolute; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; background-color: #fff; text-align: center;}
+      .popup24>img { position: absolute; left: 0; right: 0; top: 250px; margin: auto; width: 500px; height: 500px; }
+      .popup24>.logo_box { position: absolute; left: 0; right: 0; top: 50px; margin: auto; width: 400px; height: 200px;}
+
+
+
+      
+     
+     
+      
+
+      #store { width: 100%; height: 9000px; background: url(../images/bg2.jpg); position: absolute; left: 0; top: 8100px; overflow: hidden;  }
+   
+     #store_fixed { width: 8000px; height: 1000px; margin: 20px; left: 0; top: 0;  z-index: 99999999999;   position: relative; }
+     
+      #store_fixed>ul { width: 100%; height: 500px; }
+     #store_fixed>ul>li { width: 20%; height: 1000px;  box-sizing: border-box; float: left;  position: relative; font-family: 'Poiret One', cursive;} 
+     #store_fixed>ul>li>h5 { font-size: 50px; font-weight: 700; }
+     #store_fixed>ul>li:nth-child(1)>h3 { position: absolute; top: 300px; right: 120px; font-size: 30px;  text-align: center;}
+     #store_fixed>ul>li:nth-child(1)>p { position: absolute; top: 350px; right: 40px; font-size: 20px; font-weight: 600; text-align: center;}
+     #store_fixed>ul>li:nth-child(2)>p { position: absolute; top: 350px; right: 40px; font-size: 20px; font-weight: 600; text-align: center;}
+     #store_fixed>ul>li:nth-child(3)>p { position: absolute; top: 350px; right: 10px; font-size: 19px; font-weight: 600; text-align: center;}
+     #store_fixed>ul>li:nth-child(4)>p { position: absolute; top: 350px; right: 30px; font-size: 20px; font-weight: 600; text-align: center;}
+     #store_fixed>ul>li:nth-child(5)>p { position: absolute; top: 350px; right: 30px; font-size: 19px; font-weight: 600; text-align: center;}
+    
+    
+
+     #store_fixed>ul>li>#la { position: absolute; top: 100px; left: 1000px; transition: 0.3s;} /* (텍스트) 왼쪽에서 오른쪾으로  */
+     #store_fixed>ul>li>.store_img { width: 500px; height: 500px; margin-top: 100px; margin-left: 500px;}  /* 고정 */
+     
+     #store_fixed>ul>li>#osk {  position: absolute; top: 100px; left: 1000px; transition: 0.3s;}
+     #store_fixed>ul>li>#pr {  position: absolute; top: 100px; left: 1000px; transition: 0.3s;}
+     #store_fixed>ul>li>#ml {  position: absolute; top: 100px; left: 1000px; transition: 0.3s;}
+     #store_fixed>ul>li>#hj {  position: absolute; top: 100px; left: 1000px; transition: 0.3s;}
+     
+     #store_fixed>ul>li>#store_ny { width: 300px; height: 300px; position: absolute; top: -200px;  transition: 0.3s;}  /* (이미지) 위에서 아래로 */
+     #store_fixed>ul>li>#store_pr { width: 300px; height: 300px;  position: absolute; top: -200px;  transition: 0.3s;} /* (이미지) 위에서 아래로  */
+     #store_fixed>ul>li>#store_osk { width: 300px; height: 300px;  position: absolute; top: -200px;  transition: 0.3s;}
+     #store_fixed>ul>li>#store_ml { width: 300px; height: 300px;  position: absolute; top: -200px;  transition: 0.3s;}
+     #store_fixed>ul>li>#store_hj { width: 300px; height: 300px;  position: absolute; top: -200px;  transition: 0.3s;}
+
+    
+
+    #custom { width: 100%; height: 1100px; background-color: #000; position: absolute; left: 0; top: 16131px; position: relative;}
+    #custom>#list { width: 200px; height: 400px; background-color: #000; position: absolute; top: 300px; left: 200px;}
+    #list_bt>li { width: 50px; height: 50px; border-radius: 50px; background-color: #000; margin: auto; margin-top: 10px;}
+    #list_bt>li:nth-child(1) { background-color: pink; border: 3px solid #fff;}
+    #list_bt>li:nth-child(2) { background-color: red; border: 3px solid #fff;}
+    #list_bt>li:nth-child(3) { background-color: yellow; border: 3px solid #fff;}
+    #list_bt>li:nth-child(4) { background-color: blue; border: 3px solid #fff;}
+    #list_bt>li:nth-child(5) { background-color: yellowgreen; border: 3px solid #fff;}
+    #list_bt>li:nth-child(6) { background-color: black; border: 3px solid #fff;}
